@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.ncd
+OUTFILE=D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name
+LICENSE=WebPack
+USER_INFO=__0_0_0
