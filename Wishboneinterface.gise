@@ -118,7 +118,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1717134661" xil_pn:in_ck="-2660552372636625937" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-8743801200314368011" xil_pn:start_ts="1717134646">
+    <transform xil_pn:end_ts="1717138784" xil_pn:in_ck="-2660552372636625937" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-8743801200314368011" xil_pn:start_ts="1717138770">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -141,7 +141,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1717134668" xil_pn:in_ck="1159031753929388914" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2450215027749404519" xil_pn:start_ts="1717134661">
+    <transform xil_pn:end_ts="1717138791" xil_pn:in_ck="1159031753929388914" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2450215027749404519" xil_pn:start_ts="1717138784">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Wishbone_Controller.bld"/>
@@ -150,7 +150,7 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1717134697" xil_pn:in_ck="3227557075041569911" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1448924893915930207" xil_pn:start_ts="1717134668">
+    <transform xil_pn:end_ts="1717138822" xil_pn:in_ck="3227557075041569911" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1448924893915930207" xil_pn:start_ts="1717138791">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Wishbone_Controller.pcf"/>
@@ -163,7 +163,7 @@
       <outfile xil_pn:name="Wishbone_Controller_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1717134714" xil_pn:in_ck="7446594214436903280" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1717134697">
+    <transform xil_pn:end_ts="1717138838" xil_pn:in_ck="7446594214436903280" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1717138822">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -178,7 +178,7 @@
       <outfile xil_pn:name="Wishbone_Controller_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1717134728" xil_pn:in_ck="5712334810321271333" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1717134714">
+    <transform xil_pn:end_ts="1717138850" xil_pn:in_ck="5712334810321271333" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1717138838">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -195,21 +195,27 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1716815833" xil_pn:in_ck="4616394947925840943" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1716815832">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1717134046" xil_pn:in_ck="4616394947925840943" xil_pn:name="TRAN_analyzeDesignUsingChipscope" xil_pn:prop_ck="2450215027749404519" xil_pn:start_ts="1717134046">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1717134714" xil_pn:in_ck="1370158684940107891" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1717134709">
+    <transform xil_pn:end_ts="1717138838" xil_pn:in_ck="1370158684940107891" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1717138833">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Wishbone_Controller.twr"/>

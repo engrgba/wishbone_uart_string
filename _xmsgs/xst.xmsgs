@@ -62,22 +62,22 @@
 <msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\wbuart.v" Line 534: Assignment to <arg fmt="%s" index="1">unused</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 155: Result of <arg fmt="%d" index="1">27</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">26</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 156: Result of <arg fmt="%d" index="1">27</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">26</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 179: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 170: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 190: Result of <arg fmt="%d" index="1">27</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">26</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 193: Result of <arg fmt="%d" index="1">27</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">26</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 221: Result of <arg fmt="%d" index="1">27</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">26</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 225: Result of <arg fmt="%d" index="1">27</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">26</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 236: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TRIG0</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">3</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 240: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">TRIG0</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">3</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 231: Net &lt;<arg fmt="%s" index="1">DATA[255]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 235: Net &lt;<arg fmt="%s" index="1">DATA[255]</arg>&gt; does not have a driver.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="552" delta="old" >"D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 70: Input port <arg fmt="%s" index="1">i_uart_rx</arg> is not connected on this instance
@@ -188,10 +188,10 @@
 <msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">data_reg</arg>&lt;<arg fmt="%d" index="2">7</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">rxuart</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_DATA&lt;99:92&gt;</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="info" file="Xst" num="3231" delta="old" >The small RAM &lt;<arg fmt="%s" index="1">Mram_DATA&lt;99:92&gt;</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
 </msg>
 
-<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_n0124</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_n0129</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
 </msg>
 
 <msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_data_bits[1]_GND_3_o_wide_mux_30_OUT</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
@@ -320,19 +320,16 @@
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">o_wb_data_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Wishbone_Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">o_wb_cyc</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;o_wb_stb&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">o_wb_addr_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;o_wb_addr_1&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">o_wb_data_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;o_wb_data_8&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">o_wb_addr_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;o_wb_addr_1&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">o_wb_cyc</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;o_wb_we&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">o_wb_cyc</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;o_wb_we&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">o_wb_cyc</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;o_wb_we&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">o_wb_cyc</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;o_wb_we&gt; </arg>
 </msg>
 
 <msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wbu/uart_setup_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Wishbone_Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -869,6 +866,9 @@
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/zero_baud_counter</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
 </msg>
 
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">wbu/r_wb_addr_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wbu/r_wb_addr_0&gt; </arg>
+</msg>
+
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">wbu/uart_setup_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wbu/uart_setup_7&gt; &lt;wbu/uart_setup_5&gt; &lt;wbu/uart_setup_1&gt; </arg>
 </msg>
 
@@ -884,9 +884,6 @@
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">fsmfake1_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;state_FSM_FFd1&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">wbu/txf_wb_write</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wbu/r_wb_addr_1&gt; </arg>
-</msg>
-
 <msg type="info" file="Xst" num="3203" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">wbu/uart_setup_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wbu/uart_setup_3&gt; &lt;wbu/uart_setup_0&gt; </arg>
 </msg>
 
@@ -896,19 +893,133 @@
 <msg type="info" file="Xst" num="3203" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">wbu/txfifo/rd_addr_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wbu/txfifo/r_next_0&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">wbu/o_wb_data_21</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wbu/o_wb_data_17&gt; </arg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx_uart_reset</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">wbu/rx/r_setup_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wbu/rx/r_setup_0&gt; </arg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">wbu/rx/r_setup_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wbu/rx/r_setup_7&gt; &lt;wbu/rx/r_setup_5&gt; &lt;wbu/rx/r_setup_1&gt; </arg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">wbu/rx_uart_reset</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;wbu/tx_uart_reset&gt; </arg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">wbu/rx_uart_reset</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wbu/tx_uart_reset&gt; </arg>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/chg_counter_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/r_setup_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/r_setup_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/r_setup_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/r_setup_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/r_setup_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/r_setup_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wbu/rx/o_break</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Wishbone_Controller</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wbu/o_wb_data_21</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Wishbone_Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">wbu/o_wb_data_20</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Wishbone_Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">wbu/o_wb_data_19</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Wishbone_Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">wbu/o_wb_data_18</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Wishbone_Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">wbu/o_wb_data_17</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Wishbone_Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">wbu/o_wb_data_16</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Wishbone_Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">wbu/o_wb_data_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Wishbone_Controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.

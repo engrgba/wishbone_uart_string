@@ -119,6 +119,7 @@ reg [2:0]state = IDLE;
 							 else if(!push_button && setup && (state == IDLE))
 							 begin
 									state      <= UART_TX;
+									location   <= 4'd0;
 									//o_wb_we    <= 1'b1;
 									//o_wb_stb   <= 1'b1;
                           // o_wb_cyc   <= 1'b1;
@@ -166,22 +167,24 @@ reg [2:0]state = IDLE;
                       o_wb_data  <= tx_byte[location];
 							 o_wb_sel   <= 4'b1111;
 							 state      <= Ack;
+							 location   <= location +1;
 						end
 						
 		Turn_Around_time://4
 						begin
-							if(t_a_time == 26'd15000)
+							if(t_a_time == 26'd50000)
 								begin
 									 t_a_time <= 26'd0;
-									 if(location <= 4'd10)
+									 if(location < 4'd10)
 										begin
 											  state    <= UART_TX;
-											  location <= location +1;
+											  
 									   end
 										else 
 										   begin
-												 location <= 4'd0;
-												  state   <= END;
+												 location  <= 4'd0;
+												  state    <= END;
+												  t_a_time <= 0;
 											end
 									 
 								end
@@ -193,6 +196,7 @@ reg [2:0]state = IDLE;
 						end
 		Ack://5
 						begin
+							o_wb_stb   <= 1'b0;
 							 if(i_wb_ack)  
 								begin
 									
@@ -210,9 +214,9 @@ reg [2:0]state = IDLE;
 						end
 		END://6
 						begin
-							 if(t_a_time == 67108864)
+							 if(t_a_time == 26'd50000000)
 							 begin
-								  state    <= END;
+								  state    <= IDLE;
 								  t_a_time <= 0;
 							 end
 							 else
