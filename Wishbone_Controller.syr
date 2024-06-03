@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.34 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.34 secs
  
 --> Reading design: Wishbone_Controller.prj
 
@@ -157,16 +157,16 @@ Elaborating module <txuart(INITIAL_SETUP=31'b011001)>.
 WARNING:HDLCompiler:413 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\txuart.v" Line 236: Result of 5-bit expression is truncated to fit in 4-bit target.
 WARNING:HDLCompiler:1127 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\txuart.v" Line 445: Assignment to unused ignored, since the identifier is never used
 WARNING:HDLCompiler:1127 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\wbuart.v" Line 534: Assignment to unused ignored, since the identifier is never used
-WARNING:HDLCompiler:413 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 165: Result of 27-bit expression is truncated to fit in 26-bit target.
-WARNING:HDLCompiler:413 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 179: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 202: Result of 27-bit expression is truncated to fit in 26-bit target.
-WARNING:HDLCompiler:413 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 234: Result of 27-bit expression is truncated to fit in 26-bit target.
+WARNING:HDLCompiler:413 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 161: Result of 27-bit expression is truncated to fit in 26-bit target.
+WARNING:HDLCompiler:413 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 175: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 198: Result of 27-bit expression is truncated to fit in 26-bit target.
+WARNING:HDLCompiler:413 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 230: Result of 27-bit expression is truncated to fit in 26-bit target.
 
 Elaborating module <ILA>.
-WARNING:HDLCompiler:189 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 249: Size mismatch in connection of port <TRIG0>. Formal port size is 8-bit while actual signal size is 6-bit.
+WARNING:HDLCompiler:189 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 245: Size mismatch in connection of port <TRIG0>. Formal port size is 8-bit while actual signal size is 6-bit.
 
 Elaborating module <control>.
-WARNING:HDLCompiler:634 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 244: Net <DATA[255]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 240: Net <DATA[255]> does not have a driver.
 WARNING:HDLCompiler:552 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 73: Input port i_uart_rx is not connected on this instance
 
 =========================================================================
@@ -209,12 +209,12 @@ WARNING:Xst:653 - Signal <DATA<0>> is used but never assigned. This sourceless s
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 4-bit adder for signal <location[3]_GND_1_o_add_30_OUT> created at line 179.
-    Found 26-bit adder for signal <t_a_time[25]_GND_1_o_add_44_OUT> created at line 234.
+    Found 4-bit adder for signal <location[3]_GND_1_o_add_30_OUT> created at line 175.
+    Found 26-bit adder for signal <t_a_time[25]_GND_1_o_add_44_OUT> created at line 230.
     Found 16x8-bit Read Only RAM for signal <DATA<99:92>>
     Found 16x32-bit Read Only RAM for signal <n0135>
     Found 3-bit 8-to-1 multiplexer for signal <state[2]_GND_1_o_wide_mux_47_OUT> created at line 110.
-    Found 4-bit comparator greater for signal <location[3]_PWR_1_o_LessThan_33_o> created at line 187
+    Found 4-bit comparator greater for signal <location[3]_PWR_1_o_LessThan_33_o> created at line 183
     Summary:
 	inferred   2 RAM(s).
 	inferred   2 Adder/Subtractor(s).
@@ -1284,12 +1284,12 @@ i_clk                                       |    6.972|         |         |     
 =========================================================================
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 11.34 secs
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 14.82 secs
  
 --> 
 
-Total memory usage is 4504088 kilobytes
+Total memory usage is 4504056 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  314 (   0 filtered)
