@@ -10,7 +10,7 @@ Total CPU time to Xst completion: 0.11 secs
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: Wishbone_Controller.prj
 
@@ -126,7 +126,7 @@ Parsing module <Wishbone_Controller>.
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 70: Port o_wb_stall is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 73: Port o_wb_stall is not connected to this instance
 
 Elaborating module <Wishbone_Controller>.
 
@@ -157,17 +157,17 @@ Elaborating module <txuart(INITIAL_SETUP=31'b011001)>.
 WARNING:HDLCompiler:413 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\txuart.v" Line 236: Result of 5-bit expression is truncated to fit in 4-bit target.
 WARNING:HDLCompiler:1127 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\txuart.v" Line 445: Assignment to unused ignored, since the identifier is never used
 WARNING:HDLCompiler:1127 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\wbuart.v" Line 534: Assignment to unused ignored, since the identifier is never used
-WARNING:HDLCompiler:413 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 156: Result of 27-bit expression is truncated to fit in 26-bit target.
-WARNING:HDLCompiler:413 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 170: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 193: Result of 27-bit expression is truncated to fit in 26-bit target.
-WARNING:HDLCompiler:413 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 225: Result of 27-bit expression is truncated to fit in 26-bit target.
+WARNING:HDLCompiler:413 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 165: Result of 27-bit expression is truncated to fit in 26-bit target.
+WARNING:HDLCompiler:413 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 179: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 202: Result of 27-bit expression is truncated to fit in 26-bit target.
+WARNING:HDLCompiler:413 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 234: Result of 27-bit expression is truncated to fit in 26-bit target.
 
 Elaborating module <ILA>.
-WARNING:HDLCompiler:189 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 240: Size mismatch in connection of port <TRIG0>. Formal port size is 8-bit while actual signal size is 3-bit.
+WARNING:HDLCompiler:189 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 249: Size mismatch in connection of port <TRIG0>. Formal port size is 8-bit while actual signal size is 6-bit.
 
 Elaborating module <control>.
-WARNING:HDLCompiler:634 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 235: Net <DATA[255]> does not have a driver.
-WARNING:HDLCompiler:552 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 70: Input port i_uart_rx is not connected on this instance
+WARNING:HDLCompiler:634 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 244: Net <DATA[255]> does not have a driver.
+WARNING:HDLCompiler:552 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" Line 73: Input port i_uart_rx is not connected on this instance
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -178,47 +178,49 @@ Synthesizing Unit <Wishbone_Controller>.
 WARNING:Xst:2898 - Port 'i_uart_rx', unconnected in block instance 'wbu', is tied to GND.
 WARNING:Xst:2898 - Port 'i_cts_n', unconnected in block instance 'wbu', is tied to GND.
 WARNING:Xst:647 - Input <i_uart_rx> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" line 70: Output port <o_wb_stall> of the instance <wbu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" line 70: Output port <o_rts_n> of the instance <wbu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" line 70: Output port <o_uart_rx_int> of the instance <wbu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" line 70: Output port <o_uart_tx_int> of the instance <wbu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" line 70: Output port <o_uart_rxfifo_int> of the instance <wbu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" line 70: Output port <o_uart_txfifo_int> of the instance <wbu> is unconnected or connected to loadless signal.
-WARNING:Xst:653 - Signal <DATA<255:115>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+INFO:Xst:3210 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" line 73: Output port <o_wb_stall> of the instance <wbu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" line 73: Output port <o_rts_n> of the instance <wbu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" line 73: Output port <o_uart_rx_int> of the instance <wbu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" line 73: Output port <o_uart_tx_int> of the instance <wbu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" line 73: Output port <o_uart_rxfifo_int> of the instance <wbu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Gul Bahar Data\FPGAs\XILINX ISE\Wishbone Bus\Wishboneinterface - v2 string name\Wishbone_Controller.v" line 73: Output port <o_uart_txfifo_int> of the instance <wbu> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <DATA<255:116>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <DATA<91:81>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <DATA<0>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <push_button_2>.
+    Found 3-bit register for signal <state>.
     Found 26-bit register for signal <t_a_time>.
-    Found 1-bit register for signal <o_wb_stb>.
     Found 1-bit register for signal <o_wb_we>.
     Found 1-bit register for signal <o_wb_cyc>.
+    Found 1-bit register for signal <o_wb_stb>.
     Found 2-bit register for signal <o_wb_addr>.
     Found 32-bit register for signal <o_wb_data>.
     Found 4-bit register for signal <location>.
     Found 1-bit register for signal <setup>.
-    Found 3-bit register for signal <state>.
+    Found 1-bit register for signal <push_button_1>.
     Found finite state machine <FSM_0> for signal <state>.
     -----------------------------------------------------------------------
     | States             | 7                                              |
     | Transitions        | 15                                             |
-    | Inputs             | 6                                              |
+    | Inputs             | 7                                              |
     | Outputs            | 5                                              |
     | Clock              | i_clk (rising_edge)                            |
     | Power Up State     | 000                                            |
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 4-bit adder for signal <location[3]_GND_1_o_add_28_OUT> created at line 170.
-    Found 26-bit adder for signal <t_a_time[25]_GND_1_o_add_42_OUT> created at line 225.
+    Found 4-bit adder for signal <location[3]_GND_1_o_add_30_OUT> created at line 179.
+    Found 26-bit adder for signal <t_a_time[25]_GND_1_o_add_44_OUT> created at line 234.
     Found 16x8-bit Read Only RAM for signal <DATA<99:92>>
-    Found 16x32-bit Read Only RAM for signal <n0129>
-    Found 3-bit 8-to-1 multiplexer for signal <state[2]_GND_1_o_wide_mux_45_OUT> created at line 101.
-    Found 4-bit comparator greater for signal <location[3]_PWR_1_o_LessThan_31_o> created at line 178
+    Found 16x32-bit Read Only RAM for signal <n0135>
+    Found 3-bit 8-to-1 multiplexer for signal <state[2]_GND_1_o_wide_mux_47_OUT> created at line 110.
+    Found 4-bit comparator greater for signal <location[3]_PWR_1_o_LessThan_33_o> created at line 187
     Summary:
 	inferred   2 RAM(s).
 	inferred   2 Adder/Subtractor(s).
-	inferred  71 D-type flip-flop(s).
+	inferred  73 D-type flip-flop(s).
 	inferred   1 Comparator(s).
-	inferred  23 Multiplexer(s).
+	inferred  24 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <Wishbone_Controller> synthesized.
 
@@ -398,8 +400,8 @@ Macro Statistics
  28-bit subtractor                                     : 1
  4-bit adder                                           : 13
  4-bit subtractor                                      : 2
-# Registers                                            : 66
- 1-bit register                                        : 35
+# Registers                                            : 68
+ 1-bit register                                        : 37
  2-bit register                                        : 2
  24-bit register                                       : 1
  26-bit register                                       : 1
@@ -415,10 +417,10 @@ Macro Statistics
  28-bit comparator lessequal                           : 1
  4-bit comparator equal                                : 6
  4-bit comparator greater                              : 5
-# Multiplexers                                         : 105
+# Multiplexers                                         : 106
  1-bit 2-to-1 multiplexer                              : 59
  24-bit 2-to-1 multiplexer                             : 3
- 26-bit 2-to-1 multiplexer                             : 6
+ 26-bit 2-to-1 multiplexer                             : 7
  28-bit 2-to-1 multiplexer                             : 7
  3-bit 2-to-1 multiplexer                              : 2
  3-bit 8-to-1 multiplexer                              : 1
@@ -472,7 +474,7 @@ INFO:Xst:3231 - The small RAM <Mram_DATA<99:92>> will be implemented on LUTs in 
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to signal <DATA>          |          |
     -----------------------------------------------------------------------
-INFO:Xst:3231 - The small RAM <Mram_n0129> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+INFO:Xst:3231 - The small RAM <Mram_n0135> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -564,17 +566,17 @@ Macro Statistics
 # Counters                                             : 5
  28-bit up counter                                     : 1
  4-bit up counter                                      : 4
-# Registers                                            : 357
- Flip-Flops                                            : 357
+# Registers                                            : 359
+ Flip-Flops                                            : 359
 # Comparators                                          : 13
  28-bit comparator greater                             : 1
  28-bit comparator lessequal                           : 1
  4-bit comparator equal                                : 6
  4-bit comparator greater                              : 5
-# Multiplexers                                         : 129
+# Multiplexers                                         : 130
  1-bit 2-to-1 multiplexer                              : 84
  24-bit 2-to-1 multiplexer                             : 3
- 26-bit 2-to-1 multiplexer                             : 6
+ 26-bit 2-to-1 multiplexer                             : 7
  28-bit 2-to-1 multiplexer                             : 6
  3-bit 2-to-1 multiplexer                              : 2
  3-bit 8-to-1 multiplexer                              : 1
@@ -646,8 +648,8 @@ INFO:Xst:2261 - The FF/Latch <o_wb_addr_0> in Unit <Wishbone_Controller> is equi
 INFO:Xst:2261 - The FF/Latch <o_wb_data_7> in Unit <Wishbone_Controller> is equivalent to the following FF/Latch, which will be removed : <o_wb_data_8> 
 
 Optimizing unit <Wishbone_Controller> ...
-INFO:Xst:2261 - The FF/Latch <o_wb_cyc> in Unit <Wishbone_Controller> is equivalent to the following FF/Latch, which will be removed : <o_wb_we> 
-INFO:Xst:2261 - The FF/Latch <o_wb_cyc> in Unit <Wishbone_Controller> is equivalent to the following FF/Latch, which will be removed : <o_wb_we> 
+INFO:Xst:2261 - The FF/Latch <o_wb_cyc> in Unit <Wishbone_Controller> is equivalent to the following FF/Latch, which will be removed : <o_wb_stb> 
+INFO:Xst:2261 - The FF/Latch <o_wb_cyc> in Unit <Wishbone_Controller> is equivalent to the following FF/Latch, which will be removed : <o_wb_stb> 
 
 Optimizing unit <wbuart> ...
 
@@ -895,12 +897,18 @@ Found area constraint ratio of 100 (+ 5) on block Wishbone_Controller, actual ra
 
 Final Macro Processing ...
 
+Processing Unit <Wishbone_Controller> :
+	Found 2-bit shift register for signal <push_button_2>.
+Unit <Wishbone_Controller> processed.
+
 =========================================================================
 Final Register Report
 
 Macro Statistics
 # Registers                                            : 132
  Flip-Flops                                            : 132
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
 
 =========================================================================
 
@@ -923,27 +931,27 @@ Top Level Output File Name         : Wishbone_Controller.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 694
+# BELS                             : 701
 #      GND                         : 3
 #      INV                         : 14
 #      LUT1                        : 81
-#      LUT2                        : 33
-#      LUT3                        : 36
-#      LUT4                        : 116
-#      LUT5                        : 28
-#      LUT6                        : 168
+#      LUT2                        : 61
+#      LUT3                        : 34
+#      LUT4                        : 119
+#      LUT5                        : 32
+#      LUT6                        : 143
 #      MUXCY                       : 37
 #      MUXCY_L                     : 69
 #      MUXF5                       : 2
 #      MUXF6                       : 1
-#      MUXF7                       : 5
+#      MUXF7                       : 4
 #      VCC                         : 3
 #      XORCY                       : 98
-# FlipFlops/Latches                : 864
+# FlipFlops/Latches                : 865
 #      FD                          : 561
 #      FDC                         : 9
 #      FDCE                        : 16
-#      FDE                         : 98
+#      FDE                         : 99
 #      FDP                         : 18
 #      FDR                         : 54
 #      FDRE                        : 88
@@ -955,10 +963,10 @@ Primitive and Black Box Usage:
 #      RAM32M                      : 1
 #      RAMB16BWER                  : 14
 #      RAMB8BWER                   : 1
-# Shift Registers                  : 286
+# Shift Registers                  : 287
 #      SRL16                       : 256
 #      SRL16E                      : 1
-#      SRLC16E                     : 10
+#      SRLC16E                     : 11
 #      SRLC32E                     : 19
 # Clock Buffers                    : 2
 #      BUFG                        : 1
@@ -976,19 +984,19 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             864  out of  11440     7%  
- Number of Slice LUTs:                  770  out of   5720    13%  
-    Number used as Logic:               476  out of   5720     8%  
-    Number used as Memory:              294  out of   1440    20%  
+ Number of Slice Registers:             865  out of  11440     7%  
+ Number of Slice LUTs:                  779  out of   5720    13%  
+    Number used as Logic:               484  out of   5720     8%  
+    Number used as Memory:              295  out of   1440    20%  
        Number used as RAM:                8
-       Number used as SRL:              286
+       Number used as SRL:              287
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   1188
-   Number with an unused Flip Flop:     324  out of   1188    27%  
-   Number with an unused LUT:           418  out of   1188    35%  
-   Number of fully used LUT-FF pairs:   446  out of   1188    37%  
-   Number of unique control sets:        63
+ Number of LUT Flip Flop pairs used:   1197
+   Number with an unused Flip Flop:     332  out of   1197    27%  
+   Number with an unused LUT:           418  out of   1197    34%  
+   Number of fully used LUT-FF pairs:   447  out of   1197    37%  
+   Number of unique control sets:        64
 
 IO Utilization: 
  Number of IOs:                          46
@@ -1020,7 +1028,7 @@ Clock Information:
 ------------------------------------------------------------------------+-------------------------------------------------+-------+
 Clock Signal                                                            | Clock buffer(FF name)                           | Load  |
 ------------------------------------------------------------------------+-------------------------------------------------+-------+
-i_clk                                                                   | BUFGP                                           | 1046  |
+i_clk                                                                   | BUFGP                                           | 1048  |
 cntrl/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL                            | BUFG                                            | 135   |
 cntrl/CONTROL0<13>(cntrl/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE:O)| NONE(*)(ila/U0/I_YES_D.U_ILA/U_STAT/U_DIRTY_LDC)| 1     |
 cntrl/U0/iUPDATE_OUT                                                    | NONE(cntrl/U0/U_ICON/U_iDATA_CMD)               | 1     |
@@ -1040,7 +1048,7 @@ Speed Grade: -2
 
    Minimum period: 9.265ns (Maximum Frequency: 107.933MHz)
    Minimum input arrival time before clock: 6.596ns
-   Maximum output required time after clock: 4.380ns
+   Maximum output required time after clock: 4.444ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -1049,28 +1057,29 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'i_clk'
-  Clock period: 6.994ns (frequency: 142.988MHz)
-  Total number of paths / destination ports: 5374 / 1508
+  Clock period: 6.972ns (frequency: 143.437MHz)
+  Total number of paths / destination ports: 6183 / 1515
 -------------------------------------------------------------------------
-Delay:               6.994ns (Levels of Logic = 4)
-  Source:            t_a_time_7 (FF)
-  Destination:       location_0 (FF)
+Delay:               6.972ns (Levels of Logic = 5)
+  Source:            t_a_time_19 (FF)
+  Destination:       t_a_time_0 (FF)
   Source Clock:      i_clk rising
   Destination Clock: i_clk rising
 
-  Data Path: t_a_time_7 to location_0
+  Data Path: t_a_time_19 to t_a_time_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              3   0.525   1.221  t_a_time_7 (t_a_time_7)
-     LUT6:I0->O            1   0.254   0.958  t_a_time[25]_GND_1_o_equal_30_o<25>1 (t_a_time[25]_GND_1_o_equal_30_o<25>)
-     LUT6:I2->O           30   0.254   1.487  t_a_time[25]_GND_1_o_equal_30_o<25>3 (t_a_time[25]_GND_1_o_equal_30_o)
-     LUT4:I3->O            1   0.254   0.682  _n0342_inv2_SW0 (N20)
-     LUT6:I5->O            4   0.254   0.803  _n0342_inv2 (_n0342_inv)
-     FDE:CE                    0.302          location_0
+     FDE:C->Q              3   0.525   1.196  t_a_time_19 (t_a_time_19)
+     LUT5:I0->O            1   0.254   0.910  t_a_time[25]_GND_1_o_equal_44_o<25>11 (t_a_time[25]_GND_1_o_equal_44_o<25>11)
+     LUT5:I2->O            2   0.235   0.726  t_a_time[25]_GND_1_o_equal_44_o<25>13 (t_a_time[25]_GND_1_o_equal_44_o<25>1)
+     LUT6:I5->O            3   0.254   0.874  Mmux_state[2]_t_a_time[25]_wide_mux_48_OUT1101 (Mmux_state[2]_t_a_time[25]_wide_mux_48_OUT1101)
+     LUT6:I4->O           26   0.250   1.420  Mmux_state[2]_t_a_time[25]_wide_mux_48_OUT1102 (Mmux_state[2]_t_a_time[25]_wide_mux_48_OUT110)
+     LUT2:I1->O            1   0.254   0.000  Mmux_state[2]_t_a_time[25]_wide_mux_48_OUT261 (state[2]_t_a_time[25]_wide_mux_48_OUT<9>)
+     FDE:D                     0.074          t_a_time_9
     ----------------------------------------
-    Total                      6.994ns (1.843ns logic, 5.151ns route)
-                                       (26.4% logic, 73.6% route)
+    Total                      6.972ns (1.846ns logic, 5.126ns route)
+                                       (26.5% logic, 73.5% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'cntrl/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
@@ -1125,30 +1134,6 @@ Delay:               2.300ns (Levels of Logic = 1)
                                        (37.1% logic, 62.9% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'i_clk'
-  Total number of paths / destination ports: 66 / 66
--------------------------------------------------------------------------
-Offset:              5.427ns (Levels of Logic = 4)
-  Source:            cntrl/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT (PAD)
-  Destination:       ila/U0/I_YES_D.U_ILA/U_STAT/U_DSL1/U_RFDRE (FF)
-  Destination Clock: i_clk rising
-
-  Data Path: cntrl/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT to ila/U0/I_YES_D.U_ILA/U_STAT/U_DSL1/U_RFDRE
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-    BSCAN_SPARTAN6:SHIFT    3   0.000   0.766  U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS (U0/iSHIFT_OUT)
-     LUT2:I1->O           32   0.254   1.796  U0/U_ICON/U_CTRL_OUT/U_DATA_VALID (U0/U_ICON/U_CTRL_OUT/iDATA_VALID)
-     LUT4:I0->O            5   0.254   0.841  U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE (CONTROL0<13>)
-     end scope: 'cntrl:CONTROL0<13>'
-     begin scope: 'ila:CONTROL<13>'
-     LUT2:I1->O            4   0.254   0.803  U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/U_CLEAR (U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/iCLR)
-     FDCE:CLR                  0.459          U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/U_RFDRE
-    ----------------------------------------
-    Total                      5.427ns (1.221ns logic, 4.206ns route)
-                                       (22.5% logic, 77.5% route)
-
-=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'cntrl/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
   Total number of paths / destination ports: 170 / 159
 -------------------------------------------------------------------------
@@ -1174,6 +1159,30 @@ Offset:              6.596ns (Levels of Logic = 5)
                                        (22.3% logic, 77.7% route)
 
 =========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'i_clk'
+  Total number of paths / destination ports: 27 / 27
+-------------------------------------------------------------------------
+Offset:              5.427ns (Levels of Logic = 4)
+  Source:            cntrl/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT (PAD)
+  Destination:       ila/U0/I_YES_D.U_ILA/U_STAT/U_DSL1/U_RFDRE (FF)
+  Destination Clock: i_clk rising
+
+  Data Path: cntrl/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT to ila/U0/I_YES_D.U_ILA/U_STAT/U_DSL1/U_RFDRE
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN6:SHIFT    3   0.000   0.766  U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS (U0/iSHIFT_OUT)
+     LUT2:I1->O           32   0.254   1.796  U0/U_ICON/U_CTRL_OUT/U_DATA_VALID (U0/U_ICON/U_CTRL_OUT/iDATA_VALID)
+     LUT4:I0->O            5   0.254   0.841  U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE (CONTROL0<13>)
+     end scope: 'cntrl:CONTROL0<13>'
+     begin scope: 'ila:CONTROL<13>'
+     LUT2:I1->O            4   0.254   0.803  U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/U_CLEAR (U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/iCLR)
+     FDCE:CLR                  0.459          U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/U_RFDRE
+    ----------------------------------------
+    Total                      5.427ns (1.221ns logic, 4.206ns route)
+                                       (22.5% logic, 77.5% route)
+
+=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'cntrl/U0/iUPDATE_OUT'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
@@ -1197,20 +1206,20 @@ Offset:              2.120ns (Levels of Logic = 1)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'i_clk'
   Total number of paths / destination ports: 15 / 15
 -------------------------------------------------------------------------
-Offset:              4.380ns (Levels of Logic = 1)
-  Source:            o_wb_addr_0 (FF)
-  Destination:       o_wb_addr<1> (PAD)
+Offset:              4.444ns (Levels of Logic = 1)
+  Source:            o_wb_cyc (FF)
+  Destination:       o_wb_cyc (PAD)
   Source Clock:      i_clk rising
 
-  Data Path: o_wb_addr_0 to o_wb_addr<1>
+  Data Path: o_wb_cyc to o_wb_cyc
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              8   0.525   0.943  o_wb_addr_0 (o_wb_addr_0)
-     OBUF:I->O                 2.912          o_wb_addr_1_OBUF (o_wb_addr<1>)
+     FDE:C->Q             10   0.525   1.007  o_wb_cyc (o_wb_cyc_OBUF)
+     OBUF:I->O                 2.912          o_wb_cyc_OBUF (o_wb_cyc)
     ----------------------------------------
-    Total                      4.380ns (3.437ns logic, 0.943ns route)
-                                       (78.5% logic, 21.5% route)
+    Total                      4.444ns (3.437ns logic, 1.007ns route)
+                                       (77.3% logic, 22.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'cntrl/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
@@ -1269,18 +1278,18 @@ Clock to Setup on destination clock i_clk
 Source Clock                                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 --------------------------------------------+---------+---------+---------+---------+
 cntrl/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    6.525|         |         |         |
-i_clk                                       |    6.994|         |         |         |
+i_clk                                       |    6.972|         |         |         |
 --------------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 11.88 secs
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.34 secs
  
 --> 
 
-Total memory usage is 4504060 kilobytes
+Total memory usage is 4504088 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  314 (   0 filtered)

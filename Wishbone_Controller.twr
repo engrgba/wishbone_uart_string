@@ -37,8 +37,8 @@ Setup/Hold to clock i_clk
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-i_rst       |    1.938(R)|      SLOW  |   -0.617(R)|      FAST  |i_clk_BUFGP       |   0.000|
-push_button |    8.149(R)|      SLOW  |   -1.138(R)|      FAST  |i_clk_BUFGP       |   0.000|
+i_rst       |    4.476(R)|      SLOW  |   -2.216(R)|      FAST  |i_clk_BUFGP       |   0.000|
+push_button |    2.333(R)|      SLOW  |   -0.875(R)|      FAST  |i_clk_BUFGP       |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock i_clk to Pad
@@ -46,21 +46,21 @@ Clock i_clk to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-o_uart_tx   |        10.357(R)|      SLOW  |         4.433(R)|      FAST  |i_clk_BUFGP       |   0.000|
-o_wb_addr<0>|        11.575(R)|      SLOW  |         5.063(R)|      FAST  |i_clk_BUFGP       |   0.000|
-o_wb_addr<1>|        11.370(R)|      SLOW  |         4.934(R)|      FAST  |i_clk_BUFGP       |   0.000|
-o_wb_cyc    |         9.896(R)|      SLOW  |         4.149(R)|      FAST  |i_clk_BUFGP       |   0.000|
-o_wb_data<0>|         8.853(R)|      SLOW  |         3.584(R)|      FAST  |i_clk_BUFGP       |   0.000|
-o_wb_data<1>|         9.688(R)|      SLOW  |         4.014(R)|      FAST  |i_clk_BUFGP       |   0.000|
-o_wb_data<2>|         9.616(R)|      SLOW  |         4.053(R)|      FAST  |i_clk_BUFGP       |   0.000|
-o_wb_data<3>|         8.999(R)|      SLOW  |         3.644(R)|      FAST  |i_clk_BUFGP       |   0.000|
-o_wb_data<4>|         9.489(R)|      SLOW  |         3.938(R)|      FAST  |i_clk_BUFGP       |   0.000|
-o_wb_data<5>|         9.286(R)|      SLOW  |         3.811(R)|      FAST  |i_clk_BUFGP       |   0.000|
-o_wb_data<6>|         9.699(R)|      SLOW  |         4.053(R)|      FAST  |i_clk_BUFGP       |   0.000|
-o_wb_data<7>|         9.827(R)|      SLOW  |         4.089(R)|      FAST  |i_clk_BUFGP       |   0.000|
-o_wb_data<8>|        10.194(R)|      SLOW  |         4.284(R)|      FAST  |i_clk_BUFGP       |   0.000|
-o_wb_stb    |        10.115(R)|      SLOW  |         4.277(R)|      FAST  |i_clk_BUFGP       |   0.000|
-o_wb_we     |        10.397(R)|      SLOW  |         4.522(R)|      FAST  |i_clk_BUFGP       |   0.000|
+o_uart_tx   |        10.529(R)|      SLOW  |         4.568(R)|      FAST  |i_clk_BUFGP       |   0.000|
+o_wb_addr<0>|        11.545(R)|      SLOW  |         5.133(R)|      FAST  |i_clk_BUFGP       |   0.000|
+o_wb_addr<1>|        11.691(R)|      SLOW  |         5.223(R)|      FAST  |i_clk_BUFGP       |   0.000|
+o_wb_cyc    |        10.513(R)|      SLOW  |         4.509(R)|      FAST  |i_clk_BUFGP       |   0.000|
+o_wb_data<0>|         9.500(R)|      SLOW  |         3.921(R)|      FAST  |i_clk_BUFGP       |   0.000|
+o_wb_data<1>|         9.304(R)|      SLOW  |         3.826(R)|      FAST  |i_clk_BUFGP       |   0.000|
+o_wb_data<2>|         9.346(R)|      SLOW  |         3.865(R)|      FAST  |i_clk_BUFGP       |   0.000|
+o_wb_data<3>|         9.308(R)|      SLOW  |         3.827(R)|      FAST  |i_clk_BUFGP       |   0.000|
+o_wb_data<4>|        10.481(R)|      SLOW  |         4.482(R)|      FAST  |i_clk_BUFGP       |   0.000|
+o_wb_data<5>|         9.122(R)|      SLOW  |         3.733(R)|      FAST  |i_clk_BUFGP       |   0.000|
+o_wb_data<6>|         9.084(R)|      SLOW  |         3.685(R)|      FAST  |i_clk_BUFGP       |   0.000|
+o_wb_data<7>|         9.759(R)|      SLOW  |         4.065(R)|      FAST  |i_clk_BUFGP       |   0.000|
+o_wb_data<8>|         9.943(R)|      SLOW  |         4.163(R)|      FAST  |i_clk_BUFGP       |   0.000|
+o_wb_stb    |        10.637(R)|      SLOW  |         4.566(R)|      FAST  |i_clk_BUFGP       |   0.000|
+o_wb_we     |         9.599(R)|      SLOW  |         4.023(R)|      FAST  |i_clk_BUFGP       |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock i_clk
@@ -68,18 +68,18 @@ Clock to Setup on destination clock i_clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-i_clk          |    7.199|         |         |         |
+i_clk          |    5.699|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Fri May 31 12:00:37 2024 
+Analysis completed Fri May 31 15:52:42 2024 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 4591 MB
+Peak Memory Usage: 4590 MB
 
 
 

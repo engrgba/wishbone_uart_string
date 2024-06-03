@@ -34,6 +34,9 @@ module Wishbone_Controller(
         output reg  [31:0] o_wb_data ,
 		  output	wire		   o_uart_tx
         );
+		  
+		  reg push_button_1;
+		  reg push_button_2;
 //reg [8*9-1:0] string = "Gul Bahar";
 
 wire [7:0]tx_byte[9:0];
@@ -96,7 +99,13 @@ localparam IDLE        			 	= 3'd0,//states
 reg [2:0]state = IDLE;
         always@(posedge i_clk)
         begin
-        
+					 push_button_1 <= push_button;
+					 push_button_2 <= push_button_1;
+					 
+					 if(push_button_2 != push_button_1)
+					 begin
+							state <= IDLE;
+					 end
        
 		 case(state) 
 		 IDLE: //0
@@ -106,7 +115,7 @@ reg [2:0]state = IDLE;
                       o_wb_cyc   <= 1'b0;
 							 o_wb_addr  <= 2'b00;
                       o_wb_data  <= 32'd0;
-							 if(!push_button && !setup && (state == IDLE))
+							 if(!push_button_2 && !setup && (state == IDLE))
 							 begin
 									state      <= UART_SETUP;
 									o_wb_we    <= 1'b1;
@@ -116,15 +125,11 @@ reg [2:0]state = IDLE;
 									o_wb_addr  <= 2'b00;
 									o_wb_data  <= 32'd434;
 							 end
-							 else if(!push_button && setup && (state == IDLE))
+							 else if(!push_button_2 && setup && (state == IDLE))
 							 begin
 									state      <= UART_TX;
 									location   <= 4'd0;
-									//o_wb_we    <= 1'b1;
-									//o_wb_stb   <= 1'b1;
-                          // o_wb_cyc   <= 1'b1;
-									//o_wb_addr  <= 2'b11; 
-									//o_wb_data  <= tx_byte[location];
+								
 							 end
 							 else state      <= IDLE;
 						end
@@ -172,7 +177,7 @@ reg [2:0]state = IDLE;
 						
 		Turn_Around_time://4
 						begin
-							if(t_a_time == 26'd50000)
+							if(t_a_time == 26'd1500)
 								begin
 									 t_a_time <= 26'd0;
 									 if(location < 4'd10)
@@ -196,7 +201,7 @@ reg [2:0]state = IDLE;
 						end
 		Ack://5
 						begin
-							o_wb_stb   <= 1'b0;
+							o_wb_we   <= 1'b0; 
 							 if(i_wb_ack)  
 								begin
 									
@@ -214,7 +219,7 @@ reg [2:0]state = IDLE;
 						end
 		END://6
 						begin
-							 if(t_a_time == 26'd50000000)
+							 if(t_a_time == 26'd8250000)
 							 begin
 								  state    <= IDLE;
 								  t_a_time <= 0;
@@ -237,7 +242,7 @@ ILA ila (
     .CONTROL(CONTROL0), // INOUT BUS [35:0]
     .CLK(i_clk), // IN
     .DATA(DATA), // IN BUS [255:0]
-    .TRIG0({o_uart_tx, o_wb_stb, push_button} ) // IN BUS [7:0]
+    .TRIG0({state[2], state[1], state[0], o_uart_tx, o_wb_stb, push_button_2} ) // IN BUS [7:0]
 );
 control cntrl (
     .CONTROL0(CONTROL0) // INOUT BUS [35:0]
@@ -245,7 +250,7 @@ control cntrl (
 
 
 		assign DATA[1]     =  i_rst;
-		assign DATA[2]     =  push_button;
+		assign DATA[2]     =  push_button_2;
 		assign DATA[3]     =  i_wb_ack;
 		assign DATA[4]     =  o_wb_stb;
 		assign DATA[7:5]   =  state;
@@ -259,11 +264,9 @@ control cntrl (
 		//assign DATA[91:81] =  t_a_time;
 		assign DATA[99:92] =  tx_byte[location];
 		assign DATA[114:100] = location;
-		
+		assign DATA[115]     = setup;
   endmodule
 
 
-//reset fn khatam
-//state machine should run on push button 
-//add uart delay of 30us after every transaction
+
 

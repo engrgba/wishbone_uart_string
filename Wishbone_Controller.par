@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-ZESHAN_ALI::  Fri May 31 12:00:22 2024
+ZESHAN_ALI::  Fri May 31 15:52:28 2024
 
 par -w -intstyle ise -ol high -mt off Wishbone_Controller_map.ncd
 Wishbone_Controller.ncd Wishbone_Controller.pcf 
@@ -27,39 +27,39 @@ Device speed data version:  "PRODUCTION 1.23 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                   860 out of  11,440    7%
-    Number used as Flip Flops:                 859
+  Number of Slice Registers:                   861 out of  11,440    7%
+    Number used as Flip Flops:                 860
     Number used as Latches:                      1
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        631 out of   5,720   11%
-    Number used as logic:                      410 out of   5,720    7%
-      Number using O6 output only:             251
-      Number using O5 output only:             112
-      Number using O5 and O6:                   47
+  Number of Slice LUTs:                        596 out of   5,720   10%
+    Number used as logic:                      389 out of   5,720    6%
+      Number using O6 output only:             230
+      Number using O5 output only:              98
+      Number using O5 and O6:                   61
       Number used as ROM:                        0
-    Number used as Memory:                     181 out of   1,440   12%
+    Number used as Memory:                     182 out of   1,440   12%
       Number used as Dual Port RAM:              8
         Number using O6 output only:             4
         Number using O5 output only:             0
         Number using O5 and O6:                  4
       Number used as Single Port RAM:            0
-      Number used as Shift Register:           173
-        Number using O6 output only:            59
+      Number used as Shift Register:           174
+        Number using O6 output only:            60
         Number using O5 output only:             1
         Number using O5 and O6:                113
-    Number used exclusively as route-thrus:     40
-      Number with same-slice register load:     31
-      Number with same-slice carry load:         9
+    Number used exclusively as route-thrus:     25
+      Number with same-slice register load:     17
+      Number with same-slice carry load:         8
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   318 out of   1,430   22%
+  Number of occupied Slices:                   330 out of   1,430   23%
   Number of MUXCYs used:                       160 out of   2,860    5%
-  Number of LUT Flip Flop pairs used:          856
-    Number with an unused Flip Flop:           209 out of     856   24%
-    Number with an unused LUT:                 225 out of     856   26%
-    Number of fully used LUT-FF pairs:         422 out of     856   49%
+  Number of LUT Flip Flop pairs used:          877
+    Number with an unused Flip Flop:           214 out of     877   24%
+    Number with an unused LUT:                 281 out of     877   32%
+    Number of fully used LUT-FF pairs:         382 out of     877   43%
     Number of slice register sites lost
       to control set restrictions:               0 out of  11,440    0%
 
@@ -110,25 +110,25 @@ WARNING:Par:288 - The signal wbu/txfifo/Mram_fifo1_RAMD_D1_O has no load.  PAR w
 Starting Router
 
 
-Phase  1  : 5651 unrouted;      REAL time: 3 secs 
+Phase  1  : 5609 unrouted;      REAL time: 3 secs 
 
-Phase  2  : 3204 unrouted;      REAL time: 4 secs 
+Phase  2  : 3127 unrouted;      REAL time: 3 secs 
 
-Phase  3  : 889 unrouted;      REAL time: 6 secs 
+Phase  3  : 832 unrouted;      REAL time: 6 secs 
 
-Phase  4  : 889 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  4  : 832 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
 
 Updating file: Wishbone_Controller.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
 Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
 Total REAL time to Router completion: 8 secs 
@@ -152,14 +152,14 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net i_c | SETUP       |         N/A|     7.199ns|     N/A|           0
-  lk_BUFGP                                  | HOLD        |     0.306ns|            |       0|           0
+  Autotimespec constraint for clock net i_c | SETUP       |         N/A|     5.699ns|     N/A|           0
+  lk_BUFGP                                  | HOLD        |     0.302ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net CON | SETUP       |         N/A|     9.911ns|     N/A|           0
-  TROL0<0>                                  | HOLD        |     0.355ns|            |       0|           0
+  Autotimespec constraint for clock net CON | SETUP       |         N/A|    10.919ns|     N/A|           0
+  TROL0<0>                                  | HOLD        |     0.385ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net cnt | SETUP       |         N/A|     0.990ns|     N/A|           0
-  rl/U0/iUPDATE_OUT                         | HOLD        |     0.436ns|            |       0|           0
+  Autotimespec constraint for clock net cnt | SETUP       |         N/A|     0.992ns|     N/A|           0
+  rl/U0/iUPDATE_OUT                         | HOLD        |     0.438ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -177,10 +177,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 2 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 9 secs 
-Total CPU time to PAR completion: 9 secs 
+Total REAL time to PAR completion: 8 secs 
+Total CPU time to PAR completion: 8 secs 
 
-Peak Memory Usage:  4474 MB
+Peak Memory Usage:  4475 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
